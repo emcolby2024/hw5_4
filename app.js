@@ -27,7 +27,7 @@ app.use(session({
   secret: process.env.SESSIONKEY,
   resave: false,
   saveUninitialized: false,
-  store:MongoStore.create({mongoURL:url})
+  //store:MongoStore.create({mongoURL:url})
 }));
 
 app.use('/users', userRouter);
